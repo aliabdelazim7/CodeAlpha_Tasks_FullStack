@@ -12,6 +12,7 @@
     "test": "node test-api.js",
     "start": "node dist/server.js",
     "heroku-postbuild": "npm run build",
+    "netlify-build": "npm run build",
     "lint": "eslint server/ --ext .js",
     "lint:fix": "eslint server/ --ext .js --fix"
   },

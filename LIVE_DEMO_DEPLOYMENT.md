@@ -7,6 +7,7 @@ Your complete E-Commerce application with 130 products and SQLite database is re
 ## **Option 1: Heroku (Recommended)**
 
 ### **Why Heroku?**
+
 - ✅ **Free tier available**
 - ✅ **Easy deployment from GitHub**
 - ✅ **Supports SQLite databases**
@@ -16,6 +17,7 @@ Your complete E-Commerce application with 130 products and SQLite database is re
 ### **Deploy to Heroku:**
 
 #### **Step 1: Install Heroku CLI**
+
 ```bash
 # Download from: https://devcenter.heroku.com/articles/heroku-cli
 # Or use npm:
@@ -23,16 +25,19 @@ npm install -g heroku
 ```
 
 #### **Step 2: Login to Heroku**
+
 ```bash
 heroku login
 ```
 
 #### **Step 3: Create Heroku App**
+
 ```bash
 heroku create your-ecommerce-app-name
 ```
 
 #### **Step 4: Deploy from GitHub**
+
 1. Go to [Heroku Dashboard](https://dashboard.heroku.com)
 2. Click "New" → "Create new app"
 3. Choose app name: `your-ecommerce-app-name`
@@ -41,6 +46,7 @@ heroku create your-ecommerce-app-name
 6. Click "Deploy Branch"
 
 #### **Step 5: Access Your Live Demo**
+
 - **URL**: `https://your-ecommerce-app-name.herokuapp.com`
 - **Features**: All 130 products, shopping cart, user auth, orders
 
@@ -49,6 +55,7 @@ heroku create your-ecommerce-app-name
 ## **Option 2: Vercel (Frontend + Serverless)**
 
 ### **Why Vercel?**
+
 - ✅ **Excellent for React apps**
 - ✅ **Serverless functions**
 - ✅ **Automatic deployments**
@@ -57,16 +64,19 @@ heroku create your-ecommerce-app-name
 ### **Deploy to Vercel:**
 
 #### **Step 1: Install Vercel CLI**
+
 ```bash
 npm install -g vercel
 ```
 
 #### **Step 2: Deploy**
+
 ```bash
 vercel --prod
 ```
 
 #### **Step 3: Configure**
+
 - Follow the prompts
 - Connect to your GitHub repository
 - Vercel will automatically deploy
@@ -76,6 +86,7 @@ vercel --prod
 ## **Option 3: Netlify (Static + Functions)**
 
 ### **Why Netlify?**
+
 - ✅ **Great for static sites**
 - ✅ **Serverless functions**
 - ✅ **Form handling**
@@ -84,12 +95,14 @@ vercel --prod
 ### **Deploy to Netlify:**
 
 #### **Step 1: Build for Production**
+
 ```bash
 cd dist
 npm install
 ```
 
 #### **Step 2: Deploy**
+
 1. Go to [Netlify](https://netlify.com)
 2. Connect to GitHub
 3. Select repository: `aliabdelazim7/E-Commerce`
@@ -102,6 +115,7 @@ npm install
 ## **Option 4: Railway (Modern Alternative)**
 
 ### **Why Railway?**
+
 - ✅ **Modern platform**
 - ✅ **Easy database management**
 - ✅ **Automatic deployments**
@@ -110,11 +124,13 @@ npm install
 ### **Deploy to Railway:**
 
 #### **Step 1: Connect GitHub**
+
 1. Go to [Railway](https://railway.app)
 2. Sign up with GitHub
 3. Connect repository: `aliabdelazim7/E-Commerce`
 
 #### **Step 2: Deploy**
+
 - Railway will automatically detect your Node.js app
 - Deploy with one click!
 
@@ -123,6 +139,7 @@ npm install
 ## **Option 5: Render (Simple & Reliable)**
 
 ### **Why Render?**
+
 - ✅ **Simple deployment**
 - ✅ **Free tier**
 - ✅ **Automatic SSL**
@@ -131,11 +148,13 @@ npm install
 ### **Deploy to Render:**
 
 #### **Step 1: Connect Repository**
+
 1. Go to [Render](https://render.com)
 2. Connect GitHub account
 3. Select repository: `aliabdelazim7/E-Commerce`
 
 #### **Step 2: Configure Service**
+
 - **Build Command**: `npm run build`
 - **Start Command**: `node dist/server.js`
 - **Environment**: Node.js
@@ -145,6 +164,7 @@ npm install
 ## 🎯 **Quick Deployment Commands**
 
 ### **Heroku (Recommended)**
+
 ```bash
 # Install Heroku CLI
 npm install -g heroku
@@ -163,6 +183,7 @@ heroku open
 ```
 
 ### **Vercel**
+
 ```bash
 # Install Vercel CLI
 npm install -g vercel
@@ -172,6 +193,7 @@ vercel --prod
 ```
 
 ### **Netlify**
+
 ```bash
 # Install Netlify CLI
 npm install -g netlify-cli
@@ -185,6 +207,7 @@ netlify deploy --prod --dir=dist
 ## 📊 **What's Included in Your Live Demo**
 
 ### **✅ Complete Features:**
+
 - **130 Products** across multiple categories
 - **Shopping Cart** with add/remove/update
 - **User Authentication** (register/login)
@@ -194,12 +217,14 @@ netlify deploy --prod --dir=dist
 - **Professional UI** with modern styling
 
 ### **✅ Database:**
+
 - **SQLite Database** with all products
 - **User Management** system
 - **Order History** tracking
 - **Shopping Cart** persistence
 
 ### **✅ API Endpoints:**
+
 - `GET /api/products` - All products
 - `GET /api/products/:id` - Product details
 - `POST /api/auth/register` - User registration
@@ -213,18 +238,23 @@ netlify deploy --prod --dir=dist
 Once deployed, your app will be available at:
 
 ### **Heroku:**
+
 - `https://your-app-name.herokuapp.com`
 
 ### **Vercel:**
+
 - `https://your-app-name.vercel.app`
 
 ### **Netlify:**
+
 - `https://your-app-name.netlify.app`
 
 ### **Railway:**
+
 - `https://your-app-name.railway.app`
 
 ### **Render:**
+
 - `https://your-app-name.onrender.com`
 
 ---
@@ -234,14 +264,17 @@ Once deployed, your app will be available at:
 ### **Common Issues:**
 
 1. **Build Fails:**
+
    - Check Node.js version (>=14.0.0)
    - Ensure all dependencies are in package.json
 
 2. **Database Issues:**
+
    - SQLite database is included in dist folder
    - No additional setup required
 
 3. **Port Issues:**
+
    - Use `process.env.PORT` in production
    - Already configured in dist/server.js
 
