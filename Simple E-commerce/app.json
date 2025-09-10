@@ -1,0 +1,30 @@
+{
+  "name": "E-Commerce App",
+  "description": "A professional full-stack ecommerce application with React frontend and Express.js backend",
+  "repository": "https://github.com/aliabdelazim7/E-Commerce.git",
+  "logo": "https://via.placeholder.com/150x150/007bff/ffffff?text=E-Commerce",
+  "keywords": ["ecommerce", "react", "express", "nodejs", "sqlite"],
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port for the application",
+      "value": "5000"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": []
+}
